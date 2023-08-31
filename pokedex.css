@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #47bee2, #ec6262);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  letter-spacing: 5px;
+  color: #000000;
+  display: flex;
+  font-size: 30px;
+}
+
+.titulo {
+  display: flex;
+  border-radius: 100px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo img {
+  max-width: 70px;
+  max-height: 70px;
+  margin-top: -5%;
+}
+
+.pokeContainer {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.Pokemon {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(100, 100, 100, 0.3);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.Pokemon:hover {
+  transform: scale(1.05) translateZ(10px);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.7);
+  background-color: #f5a623;
+}
+
+.ImgConteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.ImgConteiner img {
+  max-width: 90%;
+}
+
+.Info {
+  margin-top: 20px;
+}
+
+.number {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2px 13px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.nome {
+  margin: 15px 0 7px;
+  letter-spacing: 1.5px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 28.5px;
+  left: 13px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 3px 10px rgba(100, 100, 100, 0.3);
+}
+
+.searchContainer h4 {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#searchInput {
+  border: none;
+  padding: 5px;
+  width: 70%;
+  font-size: 14px;
+  background-color: white;
+}
+
+#searchButton {
+  border: none;
+  padding: 5px 10px;
+  background-color: #f5a623;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  right: 1px;
+  background-image: url();
+}
+
+#searchButton:hover {
+  background-color: #d4880b;
+}
